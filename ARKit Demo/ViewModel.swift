@@ -27,8 +27,22 @@ class ViewModel {
     func addAxis(matrix: simd_float4x4) {
         let entity = try! Entity.load(named: "axis.usdz")
         entity.scale *= 5
-        entity.position = matrix.position + placeOffset
-        entity.orientation = matrix.rotation
+        
+        // Extract the position from the index finger transform
+        let indexFingerPosition = SIMD3<Float>(matrix.columns.3.x, matrix.columns.3.y, matrix.columns.3.z)
+        
+        // Create a new transform with the index finger position and identity rotation
+        let modifiedTransform = simd_float4x4(
+            SIMD4(1, 0, 0, 0),
+            SIMD4(0, 1, 0, 0),
+            SIMD4(0, 0, 1, 0),
+            SIMD4(indexFingerPosition.x, indexFingerPosition.y, indexFingerPosition.z, 1)
+        )
+        
+        entity.transform = Transform(matrix: modifiedTransform)
         contentEntity.addChild(entity)
     }
+    
+    
+    
 }
