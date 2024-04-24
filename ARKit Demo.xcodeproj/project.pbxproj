@@ -12,6 +12,11 @@
 		380EDC092BD9171300C13A51 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 380EDC082BD9171300C13A51 /* ContentView.swift */; };
 		380EDC0B2BD9171500C13A51 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 380EDC0A2BD9171500C13A51 /* Assets.xcassets */; };
 		380EDC0E2BD9171500C13A51 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 380EDC0D2BD9171500C13A51 /* Preview Assets.xcassets */; };
+		380EDC162BD9175E00C13A51 /* ARKitSessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 380EDC152BD9175E00C13A51 /* ARKitSessionManager.swift */; };
+		380EDC182BD9179B00C13A51 /* ImmersiveView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 380EDC172BD9179B00C13A51 /* ImmersiveView.swift */; };
+		380EDC1A2BD917AA00C13A51 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 380EDC192BD917AA00C13A51 /* ViewModel.swift */; };
+		380EDC1C2BD917CA00C13A51 /* simd_float4x4+Coordinate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 380EDC1B2BD917CA00C13A51 /* simd_float4x4+Coordinate.swift */; };
+		380EDC1E2BD9184B00C13A51 /* axis.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 380EDC1D2BD9184B00C13A51 /* axis.usdz */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +27,11 @@
 		380EDC0A2BD9171500C13A51 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		380EDC0D2BD9171500C13A51 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		380EDC0F2BD9171500C13A51 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		380EDC152BD9175E00C13A51 /* ARKitSessionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARKitSessionManager.swift; sourceTree = "<group>"; };
+		380EDC172BD9179B00C13A51 /* ImmersiveView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImmersiveView.swift; sourceTree = "<group>"; };
+		380EDC192BD917AA00C13A51 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
+		380EDC1B2BD917CA00C13A51 /* simd_float4x4+Coordinate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "simd_float4x4+Coordinate.swift"; sourceTree = "<group>"; };
+		380EDC1D2BD9184B00C13A51 /* axis.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = axis.usdz; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,8 +67,13 @@
 			isa = PBXGroup;
 			children = (
 				380EDC062BD9171300C13A51 /* ARKit_DemoApp.swift */,
+				380EDC152BD9175E00C13A51 /* ARKitSessionManager.swift */,
 				380EDC082BD9171300C13A51 /* ContentView.swift */,
+				380EDC172BD9179B00C13A51 /* ImmersiveView.swift */,
+				380EDC192BD917AA00C13A51 /* ViewModel.swift */,
+				380EDC1B2BD917CA00C13A51 /* simd_float4x4+Coordinate.swift */,
 				380EDC0A2BD9171500C13A51 /* Assets.xcassets */,
+				380EDC1D2BD9184B00C13A51 /* axis.usdz */,
 				380EDC0F2BD9171500C13A51 /* Info.plist */,
 				380EDC0C2BD9171500C13A51 /* Preview Content */,
 			);
@@ -143,6 +158,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				380EDC0E2BD9171500C13A51 /* Preview Assets.xcassets in Resources */,
+				380EDC1E2BD9184B00C13A51 /* axis.usdz in Resources */,
 				380EDC0B2BD9171500C13A51 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -154,7 +170,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				380EDC1A2BD917AA00C13A51 /* ViewModel.swift in Sources */,
 				380EDC092BD9171300C13A51 /* ContentView.swift in Sources */,
+				380EDC162BD9175E00C13A51 /* ARKitSessionManager.swift in Sources */,
+				380EDC182BD9179B00C13A51 /* ImmersiveView.swift in Sources */,
+				380EDC1C2BD917CA00C13A51 /* simd_float4x4+Coordinate.swift in Sources */,
 				380EDC072BD9171300C13A51 /* ARKit_DemoApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
